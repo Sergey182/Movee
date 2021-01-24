@@ -401,9 +401,28 @@ template {
           box-sizing: border-box;
 }
 
-.header__main-subtitle {
+.header__main-subtitle, .how__title, .price__title, .autopark__title {
+  font-weight: 600;
   font-size: 30px;
   line-height: 37px;
+}
+
+.price__desc, .autopark__desc {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.how__container, .price__container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.num__desc, .card__desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 body {
@@ -417,6 +436,7 @@ body {
   width: 100%;
   height: 650px;
   background-color: #FED100;
+  margin-bottom: 100px;
 }
 
 .header__wrapper {
@@ -502,10 +522,13 @@ a:hover {
   line-height: 29px;
   color: #F2F2F2;
   letter-spacing: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
 }
 
 .header__main-btn:hover {
-  background-color: #fa2a1f;
+  background-color: #fd0d00;
 }
 
 .header__main {
@@ -625,6 +648,9 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    overflow: hidden;
+  }
   .men-pic {
     display: none;
   }
@@ -639,7 +665,7 @@ a:hover {
   }
   .header__burger {
     position: absolute;
-    top: 20%;
+    top: 12%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -671,3 +697,119 @@ a:hover {
     width: 170px;
   }
 }
+
+/*SECTION HOW START*/
+.how__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.num {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 90px;
+  border-bottom: 3px solid #FED100;
+}
+
+.num__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.how__number {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px 50px;
+  margin: 0 30px;
+  margin-bottom: 80px;
+}
+
+/*SECTION HOW END*/
+/*SECTION PRICE START*/
+.price__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.price__desc {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.price__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 20px;
+}
+
+.price__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 500px;
+  border: 1px solid #d6d6d6;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.price__card:hover {
+  border: 1px solid #FED100;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.card__money {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.card__button {
+  width: 220px;
+  padding: 20px 0;
+  background-color: #FED100;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: #87fa45;
+}
+
+/*SECTION PRICE END*/
+/*SECTION AUTOPARK START*/
+.autopark__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.autopark__desc {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/*SECTION AUTOPARK END*/
