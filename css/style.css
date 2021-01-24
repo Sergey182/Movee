@@ -413,13 +413,13 @@ template {
   line-height: 29px;
 }
 
-.how__container, .price__container {
+.how__container, .price__container, .autopark__container {
   max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding: 0px 15px;
+  margin: 0px auto;
 }
 
-.num__desc, .card__desc {
+.num__desc, .card__desc, .tab__desc {
   font-weight: normal;
   font-size: 16px;
   line-height: 21px;
@@ -759,7 +759,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 400px;
+  width: 350px;
   height: 500px;
   border: 1px solid #d6d6d6;
   -ms-flex-pack: distribute;
@@ -810,6 +810,81 @@ a:hover {
 .autopark__desc {
   text-align: center;
   margin-bottom: 80px;
+}
+
+.autopark__tabs-conteiner {
+  margin: 0px 0px 50px 0px;
+}
+
+.autopark__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.autopark__cards {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 30px 0;
+  height: 700px;
+}
+
+.autopark__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.autopark__card:target {
+  display: block;
+}
+
+.tab__item {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #d6d6d6;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab__item:hover {
+  border: 1px solid #FED100;
+}
+
+.tab__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.tab__button {
+  width: 220px;
+  padding: 20px 0;
+  background-color: #FED100;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.tab__button:hover {
+  background-color: #87fa45;
 }
 
 /*SECTION AUTOPARK END*/
