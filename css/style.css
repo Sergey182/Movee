@@ -820,8 +820,9 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .autopark__cards {
@@ -835,14 +836,47 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 70px;
+  margin-bottom: 50px;
+}
+
+.autopark__card--active {
+  display: block;
+}
+
+.autopark__card-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
 }
 
-.autopark__card--active {
+.autopark__card-images {
+  width: 500px;
+}
+
+.autopark__card-pic {
+  width: 100%;
+  height: auto;
+  margin: 10px;
   display: block;
 }
 
@@ -850,12 +884,13 @@ a:hover {
   width: 200px;
   height: 50px;
   border: 1px solid #d6d6d6;
-  margin: 0px auto;
+  margin: 0px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -877,8 +912,8 @@ a:hover {
 }
 
 .tab__button {
-  width: 220px;
-  padding: 20px 0;
+  width: 150px;
+  padding: 12px 0;
   background-color: #FED100;
   text-align: center;
   vertical-align: middle;
