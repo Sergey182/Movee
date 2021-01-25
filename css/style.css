@@ -833,6 +833,25 @@ a:hover {
 }
 
 .autopark__card {
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 70px;
+  display: none;
+  margin-bottom: 50px;
+}
+
+.autopark__card--active {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,10 +865,6 @@ a:hover {
       justify-content: space-around;
   margin: 0px 70px;
   margin-bottom: 50px;
-}
-
-.autopark__card--active {
-  display: block;
 }
 
 .autopark__card-desc {

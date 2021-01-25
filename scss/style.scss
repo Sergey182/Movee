@@ -503,18 +503,26 @@ margin-bottom: 10px;
 }
 
 .autopark__card {
+    max-width: 960px;
     
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0px 70px;
-  
+    display: none;
     margin-bottom: 50px;
 }
 
 .autopark__card--active {
     display: block;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 70px;
+    margin-bottom: 50px;
 }
 
 .autopark__card-desc {
