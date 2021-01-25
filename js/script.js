@@ -4,3 +4,19 @@ $(document).ready(function() {
         
     });
 });
+
+
+
+$(document).ready(function() {
+    $('.tab__item').click(function(e){
+        e.preventDefault();
+
+        $('.tab__item').removeClass('tab__item--active');
+        $('.autopark__card').removeClass('autopark__card--active');
+
+        $(this).addClass('tab__item--active');
+        $($(this).attr('href')).addClass('autopark__card--active');
+    });
+
+    $('.tab__item:first').click();
+});

@@ -507,10 +507,12 @@ margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     display: none;
-    &:target {
-        display: block;
-    }
 }
+
+.autopark__card--active {
+    display: block;
+}
+
 
 
 .tab__item {
@@ -525,6 +527,12 @@ margin-bottom: 10px;
        border: 1px solid #FED100; 
     }
 }
+
+.tab__item--active {
+    background-color:#FED100;
+}
+
+
 
 .tab__title {
     font-weight: 500;
