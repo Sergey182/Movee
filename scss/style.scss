@@ -1,6 +1,17 @@
 @import "reset.scss";
 @import "normalize.scss";
 
+%t320 {
+    font-size: 22px;
+}
+
+%st320 {
+    font-size: 18px;
+}
+
+%p320 {
+    font-size: 16px;
+}
 
 %t { 
     font-weight: 600;
@@ -931,7 +942,7 @@ margin: 0 auto;
   
 }
 
-@media only screen and (max-width : 320px) {
+@media  screen and (min-width : 320px) and (max-width: 480px) {
 
    .header__main {
        margin-top: 150px;
@@ -950,7 +961,46 @@ font-size: 20px;
           width: 170px;
     }
 
+    .price__card {
+        width: 250px;
+    }
 
+    .autopark__tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 
+.tab__item {
+    margin:  10px ;
+    
+}
+
+.autopark__card-images {
+    display: none;
+}
+
+.autopark__card {
+    height: 200px;
+    text-align: center;
+
+}
+
+.autopark__cards {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.form__title {
+    font-size: 22px;
+}
+
+.form__desc {
+font-size: 16px;
+}
+
+
+
+}
