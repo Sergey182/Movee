@@ -3,6 +3,8 @@ $(document).ready(function() {
         $('.header__burger,.header__nav').toggleClass('active');
     });
     
+   
+   
     $('.tab__item').click(function (e) {
         e.preventDefault();
 
@@ -17,8 +19,7 @@ $(document).ready(function() {
     $('.tab__item:first').click();
 
 
-
-    $("#menu").on("click","a", function (event) {
+        $("#menu").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
@@ -26,3 +27,7 @@ $(document).ready(function() {
     });
 
 });
+
+
+
+
