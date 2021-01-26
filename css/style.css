@@ -1048,7 +1048,7 @@ a:hover {
 /*SECTION FOOTER START*/
 .footer {
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: #FED100;
 }
 
@@ -1065,6 +1065,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 20px;
 }
 
 .footer__social-icon {
@@ -1229,18 +1230,20 @@ a:hover {
     display: none;
   }
   .header__top-nav {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+  .contacts-link {
+    display: none;
+  }
   .header__burger {
     position: absolute;
-    top: 12%;
-    left: 50%;
+    top: 25px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
@@ -1254,9 +1257,53 @@ a:hover {
   .header__main-btn {
     width: 200px;
   }
+  .how__number {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 70px 50px;
+    margin: 0 30px;
+    margin-bottom: 80px;
+  }
+  .comment__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0 50px;
+  }
+  .callback-form__field {
+    padding: 10px 50px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .callback-form__submit {
+    width: 220px;
+    font-size: 16px;
+  }
+  .contacts__info {
+    margin: 0 auto;
+  }
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 170px;
+  }
+  .footer__logo {
+    margin-top: 20px;
+  }
+  .footer__callback {
+    margin-bottom: 20px;
+  }
+  .form__container {
+    padding: 0 50px;
+  }
 }
 
-@media only screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .header__main {
     margin-top: 150px;
   }
@@ -1269,5 +1316,50 @@ a:hover {
   }
   .header__main-btn {
     width: 170px;
+  }
+  .price__card {
+    width: 250px;
+  }
+  .autopark__tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tab__item {
+    margin: 10px;
+  }
+  .autopark__card-images {
+    display: none;
+  }
+  .autopark__card {
+    height: 200px;
+    text-align: center;
+  }
+  .autopark__cards {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .form__title {
+    font-size: 22px;
+  }
+  .form__desc {
+    font-size: 16px;
+  }
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 250px;
+  }
+  .header__burger {
+    top: 25px;
   }
 }

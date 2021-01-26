@@ -680,6 +680,7 @@ margin-bottom: 10px;
    flex-wrap: wrap;
    justify-content: space-between;
    align-items: center;
+   padding: 20px 20px;
    
 
 } 
@@ -869,7 +870,7 @@ text-align: center;
 
     .header__burger {
         position: absolute;
-        top: 3%;
+        top: 25px;
         
         transform: translate(-50%,-50%);    
     }
@@ -1001,6 +1002,13 @@ font-size: 20px;
 font-size: 16px;
 }
 
+.footer__container {
+    flex-direction: column;
+   height: 250px;
+}
 
+.header__burger {
+    top: 25px;
+}
 
 }
