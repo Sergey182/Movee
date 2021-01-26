@@ -15,7 +15,7 @@ $(document).ready(function() {
 
         $(this).addClass('tab__item--active');
         $($(this).children().attr('href')).addClass('autopark__card--active');
-         console.log(this);
+         
     });
 
     $('.tab__item:first').click();
