@@ -401,13 +401,13 @@ template {
           box-sizing: border-box;
 }
 
-.header__main-subtitle, .how__title, .price__title, .autopark__title, .comment__title {
+.header__main-subtitle, .how__title, .price__title, .autopark__title, .comment__title, .form__title {
   font-weight: 600;
   font-size: 30px;
   line-height: 37px;
 }
 
-.price__desc, .autopark__desc, .comment__name {
+.price__desc, .autopark__desc, .comment__name, .form__desc, .contacts__info-title {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -419,7 +419,7 @@ template {
   margin: 0px auto;
 }
 
-.num__desc, .card__desc, .tab__desc, .comment__text {
+.num__desc, .card__desc, .tab__desc, .comment__text, .contacts__info-desc {
   font-weight: normal;
   font-size: 16px;
   line-height: 21px;
@@ -1001,4 +1001,158 @@ a:hover {
 
 /*SECTION COMMENT END*/
 /*SECTION FORM START*/
+.form__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form__desc {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.callback-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+.callback-form__field {
+  width: 297px;
+  background-color: transparent;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #bfc0c5;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.callback-form__field::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #8f8f8f;
+}
+
+.callback-form__field:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #8f8f8f;
+}
+
+.callback-form__field::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #8f8f8f;
+}
+
+.callback-form__field::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #8f8f8f;
+}
+
+.callback-form__submit {
+  margin-top: 50px;
+  width: 300px;
+  height: 60px;
+  background-color: #FF352B;
+  border: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2F2F2;
+  letter-spacing: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.callback-form__submit:hover,
+.callback-form__submit:focus,
+.callback-form__submit:active {
+  background: #fd0d00;
+}
+
 /*SECTION FORM END*/
+/*SECTION CONTACT START*/
+.contacts__container {
+  width: 100%;
+}
+
+.contacts__info {
+  width: 400px;
+  height: 350px;
+  background-color: white;
+  margin-left: 20%;
+  -webkit-transform: translate(0, -150%);
+          transform: translate(0, -150%);
+}
+
+.contacts__info-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 350px;
+  padding: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__info-title {
+  font-weight: 500;
+}
+
+.contacts__info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+}
+
+.contact-social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__map {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/*SECTION CONTACT END*/
+/*SECTION FOOTER START*/
+/*SECTION FOOTER END*/
