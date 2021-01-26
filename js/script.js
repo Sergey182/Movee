@@ -1,13 +1,9 @@
 $(document).ready(function() {
     $('.header__burger').click(function(event) {
         $('.header__burger,.header__nav').toggleClass('active');
-        
     });
-});
-
-
-
-  $('.tab__item').click(function (e) {
+    
+    $('.tab__item').click(function (e) {
         e.preventDefault();
 
         $('.tab__item').removeClass('tab__item--active');
@@ -17,7 +13,6 @@ $(document).ready(function() {
         $($(this).children().attr('href')).addClass('autopark__card--active');
          
     });
-
+    
     $('.tab__item:first').click();
-   
-;
+});
