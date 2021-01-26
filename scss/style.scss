@@ -732,7 +732,7 @@ margin-bottom: 10px;
 
 .contacts__container {
     width: 100%;
-    
+    height: 700px;
 }
 
 .contacts__info {
@@ -785,7 +785,48 @@ margin-bottom: 10px;
 
 
 /*SECTION FOOTER START*/
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #FED100;
+}
 
+.footer__container {
+    height: inherit;
+   @extend %cont;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   
 
+} 
+
+.footer__social-icon {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-between;
+
+}
+
+.footer__logo {
+    @extend %st;
+    font-weight: 500;
+}
+
+.footer__callback {
+    width: 200px;
+    padding: 12px 0;
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+    border: 1px solid  #333333;
+    
+    
+    &:hover {
+       opacity: 80%;
+         }
+}
 /*SECTION FOOTER END*/
 

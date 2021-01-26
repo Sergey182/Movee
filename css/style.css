@@ -407,13 +407,13 @@ template {
   line-height: 37px;
 }
 
-.price__desc, .autopark__desc, .comment__name, .form__desc, .contacts__info-title {
+.price__desc, .autopark__desc, .comment__name, .form__desc, .contacts__info-title, .footer__logo {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
 }
 
-.how__container, .price__container, .autopark__container, .comment__container {
+.how__container, .price__container, .autopark__container, .comment__container, .footer__container {
   max-width: 1170px;
   padding: 0px 15px;
   margin: 0px auto;
@@ -1090,6 +1090,7 @@ a:hover {
 /*SECTION CONTACT START*/
 .contacts__container {
   width: 100%;
+  height: 700px;
 }
 
 .contacts__info {
@@ -1155,4 +1156,57 @@ a:hover {
 
 /*SECTION CONTACT END*/
 /*SECTION FOOTER START*/
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #FED100;
+}
+
+.footer__container {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo {
+  font-weight: 500;
+}
+
+.footer__callback {
+  width: 200px;
+  padding: 12px 0;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  border: 1px solid  #333333;
+}
+
+.footer__callback:hover {
+  opacity: 80%;
+}
+
 /*SECTION FOOTER END*/
