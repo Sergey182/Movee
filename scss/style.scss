@@ -33,6 +33,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     color: #333333;
+    overflow-x: hidden;
 }
 
 /*HEADER START*/
@@ -204,145 +205,6 @@ display: none;
 
 /*HEADER END*/
 
-/*MEDIA*/
-
-@media screen and (max-width:992px) {
-    
-    .men-pic {
-    left: 400px;
-    top: -117px;
-    }
-    
-    .header__nav-links {
-        
-        flex-direction: column;
-        padding: 150px 0 0 15px;
-        height: 50%;
-        justify-content: space-between;
-
-
-    }
-
-
-    .nav-link {
-        font-size: 30px;
-        text-transform: uppercase;
-        
-    }
-
-    .header__burger {
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 40px;
-        cursor: pointer;
-        top: -15px;
-        right: 15px;
-        z-index: 5;
-        &::before{
-            top: 20px;
-        }
-        &:after{
-            bottom: -3px;
-        }
-    }
-
-    
-
-    .header__nav {
-        position: fixed;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(241, 241, 241);
-        z-index: 3;
-        transition: all .3s ease 0s;
-    }
-
-    .header__nav.active {
-        top: 0;
-    }
-
-
-
-    .header__burger.active::before {
-    transform: rotate(45deg);
-    top: 30px;
-}
-.header__burger.active::after {
-    transform: rotate(-45deg);
-    bottom: 7px;
-}
-
-.header__burger.active span {
-    transform: scale(0);
-}
-
-}
-
-
-
-@media screen and (max-width:767px) {
-
-    .header {
-        overflow: hidden;
-    }
-    
-    .men-pic {
-    display: none;
-    
-    }
-
-    .header__top-nav {
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-    .header__burger {
-        position: absolute;
-        top: 12%;
-        left: 50%;
-        transform: translate(-50%,-50%);    
-    }
-
-    .header__main {
-
-        text-align: center;
-    }
-
-    .header__main-title {
-        font-size: 40px;
-        margin-right: 0;
-    }
-
-    .header__main-btn {
-          width: 200px;
-    }
-     
-  
-}
-
-@media only screen and (max-width : 320px) {
-
-   .header__main {
-       margin-top: 150px;
-   }
-
-  .header__main-title {
-        font-size: 35px;
-        margin-right: 0;
-    }
-
-    .header__main-subtitle {
-font-size: 20px;
-    }
-
-    .header__main-btn {
-          width: 170px;
-    }
-}
 
 
 /*SECTION HOW START*/
@@ -411,6 +273,7 @@ margin-bottom: 10px;
 }
 
 .price__cards {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 20px;
@@ -420,7 +283,7 @@ margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 350px;
+    width: 300px;
     height: 500px;
     border: 1px solid rgb(214, 214, 214);
     justify-content: space-around;
@@ -467,6 +330,7 @@ margin-bottom: 10px;
 
 .autopark__container {
     @extend %cont;
+    
 }
 
 .autopark__title {
@@ -478,6 +342,7 @@ margin-bottom: 10px;
 .autopark__desc {
  @extend %st;
     text-align: center;
+    
     margin-bottom: 80px;
 }
 
@@ -498,13 +363,14 @@ margin-bottom: 10px;
     max-width: 960px;
     margin: 0px auto;
     padding: 30px 0;
-    min-height: 350px;
+    min-height: 300px;
     margin-bottom: 50px;
+
 }
 
 .autopark__card {
     max-width: 960px;
-    
+    min-height: 300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -516,7 +382,7 @@ margin-bottom: 10px;
 
 .autopark__card--active {
     display: block;
-    
+    min-height: 300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -600,12 +466,15 @@ margin-bottom: 10px;
 
 .comment {
     width: 100%;
-    min-height: 650px;
+    height: auto;
     background-color: #FED100;
     margin-bottom: 120px;
+    padding-bottom: 50px;
+    
 }
 .comment__container {
     @extend %cont;
+     padding: 0 30px;
 }
 .comment__title {
     @extend %t;
@@ -650,6 +519,7 @@ margin-bottom: 10px;
     border: 1px solid  #333333;
     margin: 0 auto;
     
+    
     &:hover {
        opacity: 80%;
          }
@@ -680,7 +550,7 @@ margin-bottom: 10px;
 }
 
 .callback-form__field {
-  width: 297px;
+  width: 250px;
   background-color: transparent;
   background-size: 20px;
   border: 0;
@@ -704,12 +574,12 @@ margin-bottom: 10px;
 
 .callback-form__submit {
   margin-top: 50px;
-    width: 300px;
+    width: 250px;
     height: 60px;
     background-color: #FF352B;
     border: none;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
     color: #F2F2F2;
     letter-spacing: 2px;
@@ -829,4 +699,204 @@ margin-bottom: 10px;
          }
 }
 /*SECTION FOOTER END*/
+
+
+/*MEDIA*/
+
+@media screen and (max-width:992px) {
+    
+    .men-pic {
+    left: 400px;
+    top: -117px;
+    }
+    
+    .header__nav-links {
+        
+        flex-direction: column;
+        padding: 150px 0 0 15px;
+        height: 50%;
+        justify-content: space-between;
+
+
+    }
+
+
+    .nav-link {
+        font-size: 30px;
+        text-transform: uppercase;
+        
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 40px;
+        cursor: pointer;
+        top: -15px;
+        right: 15px;
+        z-index: 5;
+        &::before{
+            top: 20px;
+        }
+        &:after{
+            bottom: -3px;
+        }
+    }
+
+    
+
+    .header__nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(241, 241, 241);
+        z-index: 3;
+        transition: all .3s ease 0s;
+    }
+
+    .header__nav.active {
+        top: 0;
+    }
+
+
+
+    .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 30px;
+}
+.header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 7px;
+}
+
+.header__burger.active span {
+    transform: scale(0);
+}
+
+.price__cards {
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0 20px;
+    justify-items: center;
+}
+
+
+
+.autopark__cards {
+    
+    max-width: 960px;
+    margin: 0px auto;
+    height: 350px;
+    padding: 30px 0;
+    height: 400px;
+    margin-bottom: 100px;
+
+}
+
+.autopark__card {
+    max-width: 960px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    margin: 0px 70px;
+    display: none;
+    
+}
+
+.autopark__card--active {
+    display: block;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    margin: 0px 70px;
+    margin-bottom: 50px;
+}
+.tab__button {
+    margin-top: 15px;
+    width: 150px;
+    padding: 8px 0;
+
+}
+.callback-form {
+
+text-align: center;
+}
+
+
+}
+
+
+@media screen and (max-width:767px) {
+
+    .header {
+        overflow: hidden;
+    }
+    
+    .men-pic {
+    display: none;
+    
+    }
+
+    .header__top-nav {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .header__burger {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%,-50%);    
+    }
+
+    .header__main {
+
+        text-align: center;
+    }
+
+    .header__main-title {
+        font-size: 40px;
+        margin-right: 0;
+    }
+
+    .header__main-btn {
+          width: 200px;
+    }
+
+    
+
+
+     
+  
+}
+
+@media only screen and (max-width : 320px) {
+
+   .header__main {
+       margin-top: 150px;
+   }
+
+  .header__main-title {
+        font-size: 35px;
+        margin-right: 0;
+    }
+
+    .header__main-subtitle {
+font-size: 20px;
+    }
+
+    .header__main-btn {
+          width: 170px;
+    }
+}
+
 
